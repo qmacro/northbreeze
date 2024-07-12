@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+declare app="${1:-$(basename "$PWD")}"
+
+cf push "$app" -m 256M --no-start
+cf set-env "$app" NPM_CONFIG_PRODUCTION false
+cf set-env "$app" NODE_ENV testing
+cf start "$app"
