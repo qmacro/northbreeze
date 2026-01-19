@@ -5,8 +5,11 @@
   "license": "Apache-2.0",
   "private": true,
   "dependencies": {
-    "@cap-js/sqlite": "^1.0.1",
-    "@sap/cds": "^7"
+    "express": "^4",
+    "@sap/cds": "^9"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
   },
   "scripts": {
     "start": "cds-serve"
